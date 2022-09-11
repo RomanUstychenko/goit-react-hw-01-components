@@ -1,0 +1,81 @@
+.profile {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 30px;
+    margin-bottom: 80px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.description {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-shadow: 5px -3px 34px 3px rgba(118, 26, 26, 0.53);
+        -webkit-box-shadow: 5px -3px 34px 3px rgba(118, 26, 26, 0.53);
+        -moz-box-shadow: 5px -3px 34px 3px rgba(118, 26, 26, 0.53);
+}
+
+.name {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-style: italic;
+        margin-top: 0px;
+            margin-bottom: 0px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statsItem {
+    width: 120px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-grow: 1;
+    border: 1px solid violet;
+    background: linear-gradient(to right, #de6161, #2657eb);
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.statsItem:last-child {
+    margin-right: 0px;
+}
+
+.statsLabel {
+    margin-bottom: 10px;
+}
