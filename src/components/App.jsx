@@ -2,8 +2,8 @@ import { Profile } from "./Profile/Profile";
 import  user  from "./Json/user.json"
 import { Statistics } from "./Statistics/Statistics"
 import data from "./Json/data.json"
-import { Friends } from "./Friends/Friends"
-import friends from "./Json/friends.json"
+// import { Friends } from "./Friends/Friends"
+// import friends from "./Json/friends.json"
 
 // console.log (user)
 export const App = () => {

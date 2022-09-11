@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 
 export const Statistics = ({ title, stats }) => {
     const statsItems = stats.map(({ id, label, percentage }) => (
-        <ul class="stat-list">
-        <li class="item" key={id}>
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
+        <ul className="stat-list">
+        <li className="item" key={id}>
+          <span className="label">{label}</span>
+          <span className="percentage">{percentage}</span>
         </li>
         {/* <li class="item">
           <span class="label">{label}</span>
@@ -23,8 +23,8 @@ export const Statistics = ({ title, stats }) => {
       </ul>
     ));
     return (
-        <section class="statistics">
-     <h2 class="title">Upload stats</h2>
+        <section className="statistics">
+     <h2 className="title">Upload stats</h2>
         {statsItems}
    </section> 
     )
