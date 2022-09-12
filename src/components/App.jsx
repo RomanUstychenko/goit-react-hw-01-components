@@ -27,7 +27,7 @@ export const App = () => {
       />
       <Statistics 
       title="Upload stats" 
-      tats={data} 
+      stats={data} 
       />
 
     </div>

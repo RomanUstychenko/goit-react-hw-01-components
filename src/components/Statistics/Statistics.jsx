@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 
 export const Statistics = ({ title, stats }) => {
@@ -8,18 +8,6 @@ export const Statistics = ({ title, stats }) => {
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
-        {/* <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li> */}
       </ul>
     ));
     return (
@@ -29,11 +17,13 @@ export const Statistics = ({ title, stats }) => {
    </section> 
     )
     }
-// export const Statistics = (data) => {
-//     const { title, stats } = data;
-//     return <section class="statistics">
-//     <h2 class="title">Upload stats</h2>
 
-//   </section> 
-
-// }
+    Statistics.propTypes = {
+      title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })).isRequired,
+    }
