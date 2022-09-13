@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 // import styled from "styled-components";
-// import css from 'components/Profile/Profile.module.css'
+
 
 export const Profile = (user) => {
     const { username, tag, location, avatar, stats } = user;
