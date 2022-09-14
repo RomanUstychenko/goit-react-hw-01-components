@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 
 export const FriendList = ({ friends }) => {
+    console.log(friends)
     const FriendListItem = friends.map(({ avatar, name, isOnline, id }) => (
         <li className="item" key={id}>
  <span className="status">{isOnline}</span>

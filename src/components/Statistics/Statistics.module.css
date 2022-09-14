@@ -1,0 +1,24 @@
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.statList {
+display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    color: rgb(45, 48, 47);
+    font-size: 40px;
+    text-align: center;
+}

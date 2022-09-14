@@ -1,19 +1,22 @@
 import PropTypes from 'prop-types'
-
+import clsx from "clsx";
+import css from "./Statistics.module.css"
 
 export const Statistics = ({ title, stats }) => {
     const statsItems = stats.map(({ id, label, percentage }) => (
-        <ul className="stat-list">
-        <li className="item" key={id}>
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
+        
+        <li className={clsx(css.item)} key={id}>
+          <span className={clsx(css.label)}>{label}</span>
+          <span className={clsx(css.percentage)}>{percentage}</span>
         </li>
-      </ul>
+      
     ));
     return (
-        <section className="statistics">
-     <h2 className="title">Upload stats</h2>
+        <section className={clsx(css.statistics)}>
+     <h2 className={clsx(css.title)}>{title}</h2>
+     <ul className={clsx(css.statList)}>
         {statsItems}
+        </ul>
    </section> 
     )
     }
