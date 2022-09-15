@@ -9,14 +9,39 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
   }
 
+  .statistics {
+    width: 500px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: #9cf7ef;
+    padding: 10px 0px;
+  }
 .statList {
 display: flex;
+width: 100%;
+
+justify-content: center;
+align-items: center;
 }
 
 .item {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: rgb(131, 56, 56);
+    border: 1px solid rgb(116, 118, 119);
+    border-radius: 20px;
+    flex-basis: calc((100% - 60px) /5);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.12), 
+                        3px 6px 6px rgba(0, 0, 0, 0.06), 
+                        5px 10px 15px rgba(0, 0, 0, 0.16);
 }
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .title {
     color: rgb(45, 48, 47);
     font-size: 40px;
