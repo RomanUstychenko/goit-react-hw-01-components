@@ -4,8 +4,8 @@ import { Statistics } from "./Statistics/Statistics"
 import data from "./Json/data.json"
 import { FriendList } from "./Friends/Friends"
 import friends from "./Json/friends.json"
-// import {TransactionHistory} from "./Transactions/TransactionHistory"
-// import transactions from "./Json/transactions.json"
+import {TransactionHistory} from "./Transactions/TransactionHistory"
+import transactions from "./Json/transactions.json"
 
 export const App = () => {
   return (
@@ -33,8 +33,8 @@ export const App = () => {
       />
       <FriendList 
         friends={friends} />
-        {/* <TransactionHistory 
-        items={transactions} /> */}
+        <TransactionHistory 
+        items={transactions} />
     </div>
   );
 };

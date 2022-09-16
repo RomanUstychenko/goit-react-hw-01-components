@@ -5,10 +5,8 @@
     margin-top: 25px;
     padding: 10px 0px;
 }
-
 .item {
     display: flex;
-    /* justify-content: center; */
 align-items: center;
 margin-left: 60px;
 }
@@ -20,21 +18,23 @@ margin-left: 60px;
     background-color: #fff;
     border: 1px solid rgb(116, 118, 119);
     border-radius: 20px;
+    margin-right: 30px;
 }
-/* .status {
-    width: 10px;
-} */
 .statusGreen {
-    width: 1em;
-  margin: 1em auto;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
     border-radius: 50%;
     border: 1px solid rgb(116, 118, 119);
     background-color: rgb(10, 180, 10);
 }
-
-.statusGreen::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 100%;
-  }
+.statusRed {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(116, 118, 119);
+    background-color: rgb(160, 17, 7);
+}

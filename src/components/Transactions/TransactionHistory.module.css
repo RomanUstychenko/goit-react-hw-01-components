@@ -1,0 +1,19 @@
+
+.transactionHistory {
+    width: 700px;
+    background-color: #9cf7ef;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 10px 0px;
+}
+.TransactionsTitle {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid rgb(116, 118, 119);
+}
+.TransactionsValue {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
