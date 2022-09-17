@@ -2,8 +2,6 @@ import PropTypes from 'prop-types'
 import clsx from "clsx";
 import css from "./Profile.module.css"
 
-
-
 export const Profile = (user) => {
     const { username, tag, location, avatar, stats } = user;
     return <div className={clsx(css.profile)}>

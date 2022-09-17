@@ -1,31 +1,20 @@
-import PropTypes from 'prop-types'
 import clsx from "clsx";
 import css from "./Friends.module.css"
-
-const Green =  <span className={clsx(css.statusGreen)}></span>;
-const Red =  <span className={clsx(css.statusRed)}></span>;
+import {FriendListItem} from "./FriendsItem"
 
 export const FriendList = ({ friends }) => {
-    const FriendListItem = friends.map(({ avatar, name, isOnline, id }) => (
-        <li className={clsx(css.item)} key={id}>
-          {isOnline ? <span className={clsx(css.status)}>{Green}</span> : <span className={clsx(css.status)}>{Red}</span> }
- <img className={clsx(css.avatar)} src={avatar} alt="User avatar" width="48" /> 
- <p className={clsx(css.name)}>{name}</p>
-</li>
-    ));
     return (
         <ul className={clsx(css.friendList)}>
-            {FriendListItem}
+              {
+                friends.map(friend => (
+                  <FriendListItem
+                    id={friend.id}
+                    avatar={friend.avatar}
+                    name={friend.name}
+                    isOnline={friend.isOnline}
+                  />
+                ))
+            }
         </ul>
     )
-    }
-    FriendList.propTypes = {
-        friends: PropTypes.arrayOf(
-          PropTypes.shape({
-            avatar: PropTypes.string.isRequired,
-            name: PropTypes.string.isRequired,
-            isOnline: PropTypes.bool.isRequired,
-            id: PropTypes.number.isRequired,
-          })
-        ).isRequired,
-      };
+}

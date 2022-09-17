@@ -9,11 +9,10 @@ export const Statistics = ({ title, stats }) => {
           <span className={clsx(css.label)}>{label}</span>
           <span className={clsx(css.percentage)}>{percentage}</span>
         </li>
-      
     ));
     return (
         <section className={clsx(css.statistics)}>
-     <h2 className={clsx(css.title)}>{title}</h2>
+          {title ? <h2 className={clsx(css.title)}>{title}</h2> : ''}
      <ul className={clsx(css.statList)}>
         {statsItems}
         </ul>
